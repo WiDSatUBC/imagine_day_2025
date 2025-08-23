@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #B1C6F3;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  min-height: 100vh;        /* full viewport height */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  background-color: #3E6193;
+  height: 80px; /* made taller */
+  align-items: center;
+  justify-content: center; /* center nav buttons */
+  border-bottom: 2px solid #28599C;
+  padding: 0 20px;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #cfd8f7;
+  font-size: 18px;
+  padding: 16px 24px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  color: #ffffff;
+}
+
+.tab-button.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  right: 24px;
+  height: 3px;
+  background-color: #BBB2E6; /* purple underline */
+  border-radius: 2px;
+}
+
+/* Header bar */
+.header-bar {
+  display: flex;
+  justify-content: center;  /* center header content */
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  border-bottom: none;
+}
+
+
+
+/* Overlay for mobile */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  margin-left: 220px; /* leave space for sidebar */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ---------- Responsive ---------- */
+
+  .main {
+    margin-left: 0; /* don’t reserve space */
+  }
