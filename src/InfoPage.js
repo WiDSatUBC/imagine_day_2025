@@ -23,7 +23,7 @@ export default function GoogleFormEmbed() {
       </h2>
 
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdLbXbPc1pKVcQzLe0xhZrY0aaRJqhptMi3-a0YkZdcyPmJ4A/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdbG3TjemxGV5e5JymYLhkMxFfY59L0xDchFLw-g2ehu-FCzQ/viewform?usp=dialog"
         width="100%"
         height="700"
         frameBorder="0"
