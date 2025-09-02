@@ -9,20 +9,21 @@ body, html {
 .wheel-container {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* center horizontally */
-  justify-content: center;  /* center vertically */
-  min-height: 100vh;        /* full viewport height */
-  padding: 20px;
+  align-items: center;
+  justify-content: flex-start; /* Changed from center */
+  min-height: auto; /* Changed from 100vh */
+  padding: 0; /* Removed padding */
   box-sizing: border-box;
+  margin-top: 5px; /* Negative margin to pull wheel up */
 }
 
 /* Top Navigation */
 .top-nav {
   display: flex;
   background-color: #3E6193;
-  height: 80px; /* made taller */
+  height: 80px;
   align-items: center;
-  justify-content: center; /* center nav buttons */
+  justify-content: center;
   border-bottom: 2px solid #28599C;
   padding: 0 20px;
 }
@@ -55,21 +56,20 @@ body, html {
   left: 24px;
   right: 24px;
   height: 3px;
-  background-color: #BBB2E6; /* purple underline */
+  background-color: #BBB2E6;
   border-radius: 2px;
 }
 
 /* Header bar */
 .header-bar {
   display: flex;
-  justify-content: center;  /* center header content */
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 5px 20px; /* Reduced padding */
   background: transparent;
   border-bottom: none;
+  margin-bottom: 10px; /* Negative margin to reduce space */
 }
-
-
 
 /* Overlay for mobile */
 .overlay {
@@ -85,16 +85,19 @@ body, html {
 /* Main content */
 .main {
   flex: 1;
-  margin-left: 220px; /* leave space for sidebar */
+  margin-left: 220px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-
-
 /* ---------- Responsive ---------- */
-
+@media (max-width: 768px) {
   .main {
-    margin-left: 0; /* don’t reserve space */
+    margin-left: 0;
   }
+  
+  .wheel-container {
+    margin-top: -10px;
+  }
+}

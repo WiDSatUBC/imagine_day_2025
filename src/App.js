@@ -27,13 +27,13 @@ export default function App() {
           className={`tab-button ${page === "wheel" ? "active" : ""}`}
           onClick={() => setPage("wheel")}
         >
-          🎡 Spin Wheel
+          Spin Wheel
         </button>
         <button
           className={`tab-button ${page === "info" ? "active" : ""}`}
           onClick={() => setPage("info")}
         >
-          📝 Write Info
+          Sign up Form
         </button>
       </div>
 

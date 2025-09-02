@@ -9,7 +9,7 @@ export default function Header() {
         justifyContent: "center",
         alignItems: "center",
         gap: "4vw",
-        marginBottom: 20,
+        marginBottom: 0.5,
         flexWrap: "nowrap",
       }}
     >
@@ -41,7 +41,7 @@ export default function Header() {
             color: "#333",
           }}
         >
-          Join
+          
         </div>
         <img
           src={wids}
